@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App Demo</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <!-- Calculator wrapper -->
+    <div class="calculator">
+      <!-- calculator screen. disabled attribute prevents users from typing-->
+      <input type="text" class="calculator-screen" value="" disabled />
+
+      <!-- wrapper for calculator keys -->
+      <div class="calculator-keys">
+        <!-- buttons for operators + - * / -->
+        <button type="button" class="operator" value="+">+</button>
+        <button type="button" class="operator" value="-">-</button>
+        <button type="button" class="operator" value="*">&times;</button>
+        <button type="button" class="operator" value="/">&divide;</button>
+
+        <!-- Number buttons top most row left to right-->
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+
+        <!-- Number buttons middle row left to right -->
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+
+        <!-- Number buttons lower row left to right -->
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+
+        <!-- rest of the numbers and utilities -->
+        <button type="button" value="0">0</button>
+        <button type="button" class="decimal" value=".">.</button>
+        <button type="button" class="all-clear" value="all-clear">AC</button>
+        <button type="button" class="operator" id="equal-sign" value="=">
+          =
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
